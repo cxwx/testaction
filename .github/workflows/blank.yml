@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: test1
-      run: test1
+      run: echo v1
     - name: test2
       run: |
         mkdir build
