@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: [macos-latest,ubuntu-latest]
     steps:
-    - uses: actions/chenxu
+    - uses: actions/chenxu@v1
     - name: test1
       run: test1
     - name: test2
