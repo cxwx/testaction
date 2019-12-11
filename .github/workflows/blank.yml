@@ -16,3 +16,18 @@ jobs:
         cmake ../
         make -j2
         ./test
+  root:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: ro
+      run: |
+        xcode-select --install
+        wget "https://root.cern/download/root_v6.18.04.source.tar.gz"
+        tar -zxf root_v6.18.04.source.tar.gz
+        mkdir build
+        cd build
+        cmake ../root-6.18.04
+        make -j2
+        make install
+
