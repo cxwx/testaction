@@ -4,17 +4,13 @@ on: [push]
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: [macos-latest,ubuntu-latest]
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - uses: chenxu
+    - name: test1
+      run: test1
+    - name: test2
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
         mkdir build
         cd build
         cmake ../
