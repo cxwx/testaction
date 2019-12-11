@@ -22,7 +22,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: ro
       run: |
-        xcode-select --install
         wget "https://root.cern/download/root_v6.18.04.source.tar.gz"
         tar -zxf root_v6.18.04.source.tar.gz
         mkdir build
