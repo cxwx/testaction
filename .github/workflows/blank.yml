@@ -22,11 +22,11 @@ jobs:
     - uses: actions/checkout@v1
     - name: ro
       run: |
-        wget "https://root.cern/download/root_v6.18.04.source.tar.gz"
+        wget "https://root.cern/download/root_v6.24.00.source.tar.gz"
         tar -zxf root_v6.18.04.source.tar.gz
         mkdir build
         cd build
-        cmake ../root-6.18.04
-        make -j2
+        cmake ../root-6.24.00
+        make -j4
         make install
 
