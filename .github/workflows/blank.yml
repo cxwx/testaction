@@ -23,7 +23,7 @@ jobs:
     - name: ro
       run: |
         wget "https://root.cern/download/root_v6.24.00.source.tar.gz"
-        tar -zxf root_v6.18.04.source.tar.gz
+        tar -zxf root_v6.24.00.source.tar.gz
         mkdir build
         cd build
         cmake ../root-6.24.00
